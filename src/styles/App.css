@@ -1,0 +1,476 @@
+/* Universal Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e2e8f0;
+  z-index: 1000;
+}
+
+/* .nav-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+} */
+
+ .logo-and-nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 12px 2rem;
+ }
+
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1e293b;
+
+}
+
+.nav-items {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  padding-left: 40rem;
+  /* justify-content: center; */
+  /* align-items: space-between; */
+}
+
+.nav-button {
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 0.375rem;
+  color: #64748b;
+}
+
+.nav-button:hover {
+  color: #2563eb;
+  background-color: #eff6ff;
+}
+
+.nav-button.active {
+  color: #2563eb;
+  background-color: #eff6ff;
+}
+
+.social-icons {
+  display: flex;
+  /* align-items: center; */
+  gap: 1rem;
+  /* margin-bottom: 0.5rem; */
+}
+
+@media (min-width: 768px) {
+  .social-icons {
+    margin-bottom: 0;
+  }
+}
+
+.social-icons a {
+  color: #d1d5db;
+  /* transition: color 0.3s ease; */
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+/* Main Content */
+.main-content {
+  padding-top: 4rem;
+}
+
+.section-container {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* About Section */
+.hero-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #374151;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  color: #64748b;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.link {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Education Section */
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.education-border {
+  width: 4px;
+  flex-shrink: 0;
+}
+
+.education-border.blue {
+  background-color: #3b82f6;
+}
+
+.education-border.green {
+  background-color: #10b981;
+}
+
+.education-content {
+  background-color: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  flex: 1;
+}
+
+.education-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.education-institution {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.education-institution.blue {
+  color: #2563eb;
+}
+
+.education-institution.green {
+  color: #10b981;
+}
+
+.education-date {
+  color: #64748b;
+  margin-bottom: 0.75rem;
+}
+
+.education-details {
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+/* Research Section */
+.research-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.research-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.research-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.research-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.research-description {
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Experience Section */
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: white;
+  transition: box-shadow 0.2s;
+}
+
+.experience-item:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.experience-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.experience-company {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.experience-date {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.experience-list {
+  color: #374151;
+  padding-left: 1rem;
+}
+
+.experience-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Publications Section */
+.publications-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.publication-item {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.publication-item:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.publication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.publication-type {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 9999px;
+}
+
+.publication-type.oral {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.publication-type.paper {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.publication-date {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.publication-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.publication-venue {
+  color: #2563eb;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.publication-location {
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.publication-doi {
+  color: #64748b;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-card {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.skill-card-blue {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+.skill-card-green {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+.skill-card-purple {
+  background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+}
+
+.skill-card-orange {
+  background: linear-gradient(135deg, #fffbeb 0%, #fed7aa 100%);
+}
+
+.skill-card-teal {
+  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+}
+
+.skill-card-pink {
+  background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+}
+
+.skill-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.skill-list {
+  color: #374151;
+  font-size: 0.875rem;
+  padding-left: 1rem;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+.contact-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f5f5f5;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.icons a {
+  color: #333;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.icons a:hover {
+  transform: scale(1.2);
+  color: #0077b5; /* LinkedIn blue-ish on hover */
+}
