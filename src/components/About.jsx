@@ -32,32 +32,6 @@ const About = () => {
           commitment to sustainable agriculture and innovative geospatial
           solutions.
         </p>
-        {/* <h2 className="contact-section">CONTACT US</h2>
-
-        <div className="icons"> */}
-        {/* LinkedIn */}
-        {/* <a
-            href="https://www.linkedin.com/in/bivekbhusal/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin size={40} />
-          </a> */}
-        {/* 
-        {/* GitHub */}
-        {/* <a
-          href="https://github.com/your-username"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub size={40} />
-        </a>  */}
-
-        {/* Email */}
-        {/* <a href="mailto: bivek.bhusal.iaas@gmail.com">
-            <FaEnvelope size={40} />
-          </a>
-        </div> */}
       </div>
     </div>
     // </div>
