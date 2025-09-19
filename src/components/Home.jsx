@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => {
   const educationData = [
     {
-      title: "Ph.D. Candidate, Plant Science",
+      title: "Ph.D. , Plant Science",
       institution: "University of Connecticut, CT, USA",
       date: "2019 - 2025",
       details:
@@ -13,10 +13,9 @@ const Home = () => {
     {
       title: "B.Sc. Agriculture",
       institution:
-        "Lamjung Campus, Institute of Agriculture and Animal Science",
-      date: "Tribhuvan University, Nepal • December 2017",
+        "Tribhuvan University, Institute of Agriculture and Animal Science, Nepal",
+      date: " 2017",
       details: [
-        "Comprehensive agricultural education with focus on crop science and sustainable farming practices",
         "Thesis: Comparison of Interpolation techniques for mapping soil fertility parameters",
       ],
       color: "green",
@@ -30,7 +29,7 @@ const Home = () => {
         <div className="hero-container">
           <h1 className="main-title">Bivek Bhusal</h1>
           <p className="subtitle">
-            Ph.D. in Plant Science (Applied Remote Sensing Specialist and GIS)
+            Ph.D. in Plant Science (Applied Remote Sensing and GIS)
           </p>
           <p className="description">{/* ... your long description ... */}</p>
         </div>

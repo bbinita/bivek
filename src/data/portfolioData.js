@@ -2,7 +2,8 @@ export const outreach = [
   
   {
     title:
-      "Leaf-level hyperspectral and UAV-based multispectral detection of potato leafhopper infestation and nitrogen stress in beans varieties under field and controlled environment conditions.",
+      
+      "Conference Presentation on multiple titles related to:  Leaf-level hyperspectral and UAV-based multispectral detection of potato leafhopper infestation and nitrogen stress in beans varieties under field and controlled environment conditions.",
     events: [
       {
         venue:
@@ -29,10 +30,7 @@ export const outreach = [
           "Graduate Student Research Forum College of Agriculture, Health and Natural Resources, University of Connecticut, CT",
         date: "April 1, 2023",
       },
-      {
-        venue: "Journal of the Institute of Agriculture and Animal Science",
-        date: "2018",
-      },
+     
     ],
   },
   {
@@ -43,14 +41,15 @@ export const outreach = [
           "2025 UConn Extension Vegetable and Small Fruit Growers’ Conference, University of Connecticut, Storrs, CT",
         date: "January 7, 2025",
         details:
-          "Drone Imaging for detecting Potato leafhopper infestation and Nitrogen deficiency in green beans (Bhusal, B., A. Legrand and C. Witharana).",
+          " Poster presentation on: Drone Imaging for detecting Potato leafhopper infestation and Nitrogen deficiency in green beans.",
       },
       {
         venue:
           "Vegetable IPM Field Workshop, UConn Plant Science Research and Education Facility",
         date: "August 8, 2023 & August 1, 2024",
         details:
-          "Demonstrated drone flight, provided research updates and talk on plant reflectance and remote sensing in IPM scouting and nutrient status determination.",
+        "Drone flight demonstration, talks on remote sensing for IPM and crop  monitoring."
+          ,
       },
       {
         venue:

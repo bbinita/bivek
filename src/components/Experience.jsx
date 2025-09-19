@@ -3,9 +3,9 @@ import React from "react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Research Assistant / Technician, University of Connecticut",
+      title: "Research Assistant / Technician",
       company: "University of Connecticut",
-      date: "August 2019 - Present",
+      date: "August 2019 - August 2025",
       responsibilities: [
         "Led independent and collaborative research projects from inception to completion, including formulating research questions, conducting literature reviews, designing methodologies, analyzing data, and preparing manuscripts and reports.",
 
@@ -33,9 +33,9 @@ const Experience = () => {
       ],
     },
     {
-      title: "Agriculture Technical Officer",
+      title: "Agriculture Consultant",
       company: " Big Agricultural Farm Pvt. Ltd., Nepal",
-      date: "September 2017 - November 2018",
+      date: "September 2017 - June 2019",
       responsibilities: [
         "Trained farmers in organic cultivation and integrated pest management",
         "Supervised technicians in project planning and execution",
@@ -46,7 +46,7 @@ const Experience = () => {
     {
       title: "Agriculture Technical Officer",
       company: " Brihat Agro Farm Pvt. Ltd., Nepal",
-      date: "Nov 2018 – Jun 2019",
+      date: "November 2018 – June 2019",
       responsibilities: [
         "Trained farmers and farmer groups in sustainable practices, including organic cultivation of vegetables, fruits, and cereals (rice, wheat, corn), integrated pest management, use of local resources for bio-pesticide and bio-fertilizer production, drip irrigation, vermiculture, and greenhouse cultivation.",
 
