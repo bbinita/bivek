@@ -8,7 +8,7 @@ const About = () => {
         {/* <div className="profile-circle">BB</div> */}
         <h1 className="main-title">Bivek Bhusal</h1>
         <p className="subtitle">
-          Ph.D. in Plant Science - Remote Sensing Specialist
+          Ph.D. in Plant Science ( applied Remote Sensing Specialist and GIS)
         </p>
         <p className="description">
           I am a researcher specializing in remote sensing, precision
@@ -23,14 +23,13 @@ const About = () => {
           machine learning techniques to spectral data. My work bridges plant
           science, remote sensing, and digital agriculture, with applications
           extending to natural resource management, pest monitoring, and
-          sustainable crop production. Beyond research, I bring strong skills in
-          programming (R, Python, SAS), GIS (ArcGIS Pro, QGIS, ENVI), UAV
-          operation (FAA Part 107 certified), and data visualization, enabling
-          me to translate complex datasets into actionable insights. My
-          portfolio highlights this interdisciplinary expertise, showcasing
-          selected projects, publications, and technical outputs that reflect my
-          commitment to sustainable agriculture and innovative geospatial
-          solutions.
+          sustainable crop production. I am well equiped with skills in spectral
+          image processing, spatial analysis, UAV operation and statistical
+          programming enabling me to translate complex datasets into actionable
+          insights. My portfolio highlights this interdisciplinary expertise,
+          showcasing selected projects, publications, and technical outputs that
+          reflect my commitment to sustainable agriculture and innovative
+          geospatial solutions.
         </p>
       </div>
     </div>

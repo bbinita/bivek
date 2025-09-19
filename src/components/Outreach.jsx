@@ -1,0 +1,55 @@
+import React from "react";
+
+const Outreach = ({ outreach }) => (
+  <section className="section-container">
+    <h2 className="section-title">Outreach & Presentations</h2>
+    <div className="publications-container">
+      {outreach.map((pub, i) => (
+        <div key={i} className="publication-item">
+          <div className="publication-header">
+            <span
+              className={`publication-type ${
+                pub.type === "Oral Presentation"
+                  ? "oral"
+                  : pub.type === "Extension Event"
+                  ? "extension"
+                  : "paper"
+              }`}
+            >
+              {pub.type}
+            </span>
+            {pub.date && <span className="publication-date">{pub.date}</span>}
+          </div>
+
+          <h3 className="publication-title">{pub.title}</h3>
+
+          {/* If multiple events exist under one title */}
+          {pub.events ? (
+            <ul className="publication-events">
+              {pub.events.map((event, j) => (
+                <li key={j} className="event-item">
+                  <p className="publication-venue">{event.venue}</p>
+                  {event.date && (
+                    <span className="publication-date">{event.date}</span>
+                  )}
+                  {event.details && (
+                    <p className="publication-details">{event.details}</p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <>
+              {pub.venue && <p className="publication-venue">{pub.venue}</p>}
+              {pub.location && (
+                <p className="publication-location">{pub.location}</p>
+              )}
+            </>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+);
+
+export default Outreach;

@@ -1,34 +1,44 @@
-import React from 'react';
+import React from "react";
 
 const Education = () => {
+  const educationData = [
+    {
+      title: "Ph.D. Candidate, Plant Science",
+      institution: "University of Connecticut, CT, USA",
+      date: "2019 - 2025",
+      details:
+        "Concentration: Remote sensing of biotic and abiotic stress in vegetation",
+      color: "blue",
+    },
+    {
+      title: "B.Sc. Agriculture",
+      institution:
+        "Lamjung Campus, Institute of Agriculture and Animal Science",
+      date: "Tribhuvan University, Nepal • December 2017",
+      details: [
+        "Comprehensive agricultural education with focus on crop science and sustainable farming practices",
+        "Thesis: Comparison of Interpolation techniques for mapping soil fertility parameters",
+      ],
+      color: "green",
+    },
+  ];
+
   return (
     <div className="section-container">
       <h2 className="section-title">Education</h2>
       <div className="education-container">
-        <div className="education-item">
-          <div className="education-border blue"></div>
-          <div className="education-content">
-            <h3 className="education-title">Ph.D. Candidate, Plant Science</h3>
-            <p className="education-institution blue">University of Connecticut, Storrs, CT</p>
-            <p className="education-date">Expected completion: May 2025</p>
-            <p className="education-details">
-              <strong>Dissertation:</strong> Remote sensing of Potato leafhopper infestation and nitrogen deficiency in beans
-            </p>
-            <p className="education-details">
-              <strong>Focus:</strong> Remote sensing of crop stress using drone-based multispectral imaging
-            </p>
+        {educationData.map((edu, i) => (
+          <div key={i} className="education-item">
+            <h3>{edu.title}</h3>
+            <p style={{ color: edu.color }}>{edu.institution}</p>
+            <p>{edu.date}</p>
+            {Array.isArray(edu.details) ? (
+              edu.details.map((d, idx) => <p key={idx}>{d}</p>)
+            ) : (
+              <p>{edu.details}</p>
+            )}
           </div>
-        </div>
-        
-        <div className="education-item">
-          <div className="education-border green"></div>
-          <div className="education-content">
-            <h3 className="education-title">B.Sc. Agriculture</h3>
-            <p className="education-institution green">Lamjung Campus, Institute of Agriculture and Animal Science</p>
-            <p className="education-date">Tribhuvan University, Nepal • December 2017</p>
-            <p className="education-details">Comprehensive agricultural education with focus on crop science and sustainable farming practices</p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

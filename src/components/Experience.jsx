@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Experience = () => {
   const experiences = [
@@ -19,8 +19,8 @@ const Experience = () => {
 
         "Maintained insect colonies and managed controlled-environment greenhouse experiments for stress physiology studies.",
 
-        "Supported Integrated Pest Management (IPM) extension workshops by assisting in experimental demonstrations and stakeholder engagement."
-      ]
+        "Supported Integrated Pest Management (IPM) extension workshops by assisting in experimental demonstrations and stakeholder engagement.",
+      ],
     },
     {
       title: "Research Intern",
@@ -29,49 +29,47 @@ const Experience = () => {
       responsibilities: [
         "Collected plant samples and drone images from commercial fruit orchards",
         "Analyzed hyperspectral and multispectral data from fruit trees",
-        "Used GPS devices for ground control point establishment"
-      ]
+        "Used GPS devices for ground control point establishment",
+      ],
     },
     {
       title: "Agriculture Technical Officer",
-      company: "Shelter (Aashraya) Nepal & Brihat Agro Farm Pvt. Ltd.",
-      date: "January 2018 - June 2019",
+      company: " Big Agricultural Farm Pvt. Ltd., Nepal",
+      date: "September 2017 - November 2018",
       responsibilities: [
         "Trained farmers in organic cultivation and integrated pest management",
         "Supervised technicians in project planning and execution",
-        "Provided training in data analysis using MS Office and R-stat"
-      ]
+        "Provided training in data analysis using MS Office and R-stat",
+      ],
     },
 
-     {
+    {
       title: "Agriculture Technical Officer",
-      company: " Big Agricultural Farm Pvt. Ltd., Nepal | Brihat Agro Farm Pvt. Ltd., Nepal",
-      date: "Jan – Nov 2018 | Nov 2018 – Jun 2019",
+      company: " Brihat Agro Farm Pvt. Ltd., Nepal",
+      date: "Nov 2018 – Jun 2019",
       responsibilities: [
         "Trained farmers and farmer groups in sustainable practices, including organic cultivation of vegetables, fruits, and cereals (rice, wheat, corn), integrated pest management, use of local resources for bio-pesticide and bio-fertilizer production, drip irrigation, vermiculture, and greenhouse cultivation.",
-        
+
         "Supervised and trained technicians in project planning, experimental designs, field layouts, and documentation to support research and production programs.",
 
         "Delivered technical training in MS Office, R (statistical analysis), and ArcMap (GIS mapping), guiding technicians to analyze data and generate presentable maps for research and reporting.",
 
-        "Conducted extensive field travel to train technicians, monitor production inputs, and validate produce quality and quantity for both commercial and research purposes."  
-
-      ]
+        "Conducted extensive field travel to train technicians, monitor production inputs, and validate produce quality and quantity for both commercial and research purposes.",
+      ],
     },
 
-     {
+    {
       title: "Undergraduate Research Volunteer",
       company: " Nepal Agricultural Research Council (NARC)",
       date: "August 2016 – July 2017",
       responsibilities: [
         "Collected and analyzed soil samples from randomly generated coordinates across a watershed catchment to assess spatial variability in soil fertility.",
-        
+
         "Conducted land cover and land use classification using satellite imagery to characterize the study area.",
 
-        "Evaluated and compared GIS-based interpolation techniques for mapping soil fertility parameters"
-      ]
+        "Evaluated and compared GIS-based interpolation techniques for mapping soil fertility parameters",
+      ],
     },
-
   ];
 
   return (
