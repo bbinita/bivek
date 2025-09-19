@@ -2,7 +2,7 @@ import React from "react";
 
 const Outreach = ({ outreach }) => (
   <section className="section-container">
-    <h2 className="section-title">Outreach & Presentations</h2>
+    <h2 className="section-title">Outreach Presentations / Talks</h2>
     <div className="publications-container">
       {outreach.map((pub, i) => (
         <div key={i} className="publication-item">
@@ -29,11 +29,23 @@ const Outreach = ({ outreach }) => (
               {pub.events.map((event, j) => (
                 <li key={j} className="event-item">
                   <p className="publication-venue">{event.venue}</p>
+
+                  {event.details && (
+                    <>
+                      {Array.isArray(event.details) ? (
+                        event.details.map((d, k) => (
+                          <p key={k} className="publication-details">
+                            {d}
+                          </p>
+                        ))
+                      ) : (
+                        <p className="publication-details">{event.details}</p>
+                      )}
+                    </>
+                  )}
+
                   {event.date && (
                     <span className="publication-date">{event.date}</span>
-                  )}
-                  {event.details && (
-                    <p className="publication-details">{event.details}</p>
                   )}
                 </li>
               ))}

@@ -10,13 +10,25 @@ import SkillsAndAwards from "./components/SkillsAndAwards";
 import { outreach } from "./data/portfolioData";
 import "./styles/App.css";
 
-// Home component including Contact
 const Home = () => {
   return (
-    <div>
+    <div className="home-container">
+      {/* Hero Section with Profile Picture */}
+      <div className="hero-section">
+        <img src="/bivek/bivek.jpg" alt="Profile" className="profile-picture" />
+        <div className="hero-text">
+          <h1 className="main-title">Bivek Bhusal</h1>
+          <p className="subtitle">
+            Ph.D. in Plant Science (Applied Remote Sensing and GIS)
+          </p>
+        </div>
+      </div>
+
+      {/* About Section */}
       <About />
+
+      {/* Education Section */}
       <Education />
-      {/* <Contact social={social} />  */}
     </div>
   );
 };
@@ -44,6 +56,7 @@ function App() {
       <main className="main-content">
         {sections[activeSection] || <Home />}
       </main>
+
       <footer className="footer">
         <p>© {new Date().getFullYear()} Bivek Bhusal. All rights reserved.</p>
       </footer>

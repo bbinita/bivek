@@ -5,11 +5,12 @@ const About = () => {
   return (
     <div className="section-container">
       <div className="hero-container">
+        <h2 className="section-title">About Me</h2>
         {/* <div className="profile-circle">BB</div> */}
-        <h1 className="main-title">Bivek Bhusal</h1>
+        {/* <h1 className="main-title">Bivek Bhusal</h1>
         <p className="subtitle">
           Ph.D. in Plant Science ( applied Remote Sensing Specialist and GIS)
-        </p>
+        </p> */}
         <p className="description">
           I am a researcher specializing in remote sensing, precision
           agriculture, and plant stress detection, with a strong background in

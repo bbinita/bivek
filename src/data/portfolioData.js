@@ -3,7 +3,7 @@ export const outreach = [
   {
     title:
       
-      "Conference Presentation on multiple titles related to:  Leaf-level hyperspectral and UAV-based multispectral detection of potato leafhopper infestation and nitrogen stress in beans varieties under field and controlled environment conditions.",
+      "Conference Presentation on multiple titles related to : Leaf-level hyperspectral and UAV-based multispectral detection of potato leafhopper infestation and nitrogen stress in beans varieties under field and controlled environment conditions.",
     events: [
       {
         venue:
@@ -12,7 +12,7 @@ export const outreach = [
       },
       {
         venue:
-          "2024 IEEE Systems and Technologies for Remote Sensing Applications Through Unmanned Aerial Systems (STRATUS), Syracuse, NY",
+          "2024 IEEE Systems and Technologies for Remote Sensing Applications Through Unmanned Aerial Systems , Syracuse, NY",
         date: "May 20-22, 2024",
       },
       {
@@ -38,26 +38,33 @@ export const outreach = [
     events: [
       {
         venue:
-          "2025 UConn Extension Vegetable and Small Fruit Growers’ Conference, University of Connecticut, Storrs, CT",
-        date: "January 7, 2025",
-        details:
-          " Poster presentation on: Drone Imaging for detecting Potato leafhopper infestation and Nitrogen deficiency in green beans.",
-      },
-      {
-        venue:
-          "Vegetable IPM Field Workshop, UConn Plant Science Research and Education Facility",
-        date: "August 8, 2023 & August 1, 2024",
-        details:
-        "Drone flight demonstration, talks on remote sensing for IPM and crop  monitoring."
+         " Poster presentation on: Drone Imaging for detecting Potato leafhopper infestation and Nitrogen deficiency in green beans."
           ,
+           details:
+        "2025 UConn Extension Vegetable and Small Fruit Growers’ Conference, University of Connecticut, Storrs, CT"
+         ,
+        date: "January 7, 2025",
+       
       },
       {
         venue:
-          "Connecticut Pomological Society Twilight Meeting and Field Day, Holmberg Orchards, Gales Ferry, CT",
+        "Drone flight demonstration, talks on remote sensing for IPM and crop  monitoring."
+        ,
         date: "June 4, 2024",
-        details:
-          "Demonstrated drone flight and gave a talk on the importance of remote sensing of plant response for detecting plant health status in fruit trees.",
+        details: [
+          "Vegetable IPM Field Workshop, UConn Plant Science Research and Education Facility",
+          
+        
+        
+          "Connecticut Pomological Society Twilight Meeting and Field Day, Holmberg Orchards, Gales Ferry, CT",]
       },
+      // {
+      //   venue:
+      //     
+      //   date: "June 4, 2024",
+      //   details:
+      //     "Demonstrated drone flight and gave a talk on the importance of remote sensing of plant response for detecting plant health status in fruit trees.",
+      // },
     ],
   },
 ];

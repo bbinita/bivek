@@ -89,7 +89,7 @@ const SkillsAndAwards = () => {
     <>
       <div className="section-container">
         {/* Skills Section */}
-        <h2 className="section-title">Skills</h2>
+        <h2 className="section-title"> Technical Skills</h2>
         <div className="skills-grid">
           {skillCategories.map((cat, i) => (
             <div key={i} className="skill-card">
