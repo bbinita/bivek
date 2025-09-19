@@ -5,17 +5,18 @@ import Education from "./components/Education.jsx";
 import Experience from "./components/Experience.jsx";
 import Research from "./components/Research.jsx";
 import Outreach from "./components/Outreach.jsx";
+// import Contact from "./components/Contact.jsx";
+import SkillsAndAwards from "./components/SkillsAndAwards";
 import { outreach } from "./data/portfolioData";
-import SkillsAndAwards from "./components/SkillsAndAwards"; // merged component
-import Contact from "./components/Contact";
 import "./styles/App.css";
 
-// Home component
+// Home component including Contact
 const Home = () => {
   return (
     <div>
       <About />
       <Education />
+      {/* <Contact social={social} />  */}
     </div>
   );
 };
@@ -29,9 +30,9 @@ function App() {
     education: <Education />,
     experience: <Experience />,
     research: <Research />,
-    outreach: <Outreach outreach={outreach} />, // ✅ pass data here
-    "skills-awards": <SkillsAndAwards />, // merged section
-    contact: <Contact />,
+    outreach: <Outreach outreach={outreach} />,
+    "skills-awards": <SkillsAndAwards />,
+    // contact: <Contact social={social} />,
   };
 
   return (

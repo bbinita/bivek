@@ -28,12 +28,12 @@ body {
   align-items: center;
 }
 
-.logo {
+/* .logo {
   font-size: 1.25rem;
   font-weight: bold;
   color: #1e293b;
   cursor: pointer;
-}
+} */
 
 .nav-items {
   display: flex;
@@ -95,12 +95,22 @@ body {
   margin: 0 auto;
 }
 
-.section-title {
+/* .section-title {
   font-size: 2rem;
   font-weight: bold;
   color: #1e293b;
   margin-bottom: 3rem;
   text-align: center;
+} */
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem 0 1rem;
+  text-align: center;
+  color: #1e293b; /* dark slate */
+  /* border-bottom: 2px solid #1e293b; */
+  padding-bottom: 0.5rem;
 }
 
 /* About Section */
@@ -198,13 +208,13 @@ body {
 }
 
 /* Color variants for institutions */
-.education-item p[style*="blue"] {
+/* .education-item p[style*="blue"] {
   color: #2563eb;
 }
 
 .education-item p[style*="green"] {
   color: #10b981;
-}
+} */
 
 /* Research Section */
 .research-container {
@@ -332,7 +342,7 @@ body {
 }
 
 .publication-type.paper {
-  background-color: #dcfce7;
+  /* background-color: #dcfce7; */
   color: #166534;
 }
 
@@ -361,9 +371,9 @@ body {
 
 .publication-doi {
   color: #64748b;
-}
+} 
 
-/* Skills Section */
+/* Skills Section
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -373,30 +383,6 @@ body {
 .skill-card {
   padding: 1.5rem;
   border-radius: 0.5rem;
-}
-
-.skill-card-blue {
-  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-}
-
-.skill-card-green {
-  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-}
-
-.skill-card-purple {
-  background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
-}
-
-.skill-card-orange {
-  background: linear-gradient(135deg, #fffbeb 0%, #fed7aa 100%);
-}
-
-.skill-card-teal {
-  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
-}
-
-.skill-card-pink {
-  background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
 }
 
 .skill-title {
@@ -410,7 +396,7 @@ body {
   color: #374151;
   font-size: 0.875rem;
   padding-left: 1rem;
-}
+} */
 .footer {
   position: fixed;
   bottom: 0;
@@ -447,4 +433,122 @@ body {
 .icons a:hover {
   transform: scale(1.2);
   color: #0077b5; /* LinkedIn blue-ish on hover */
+}
+
+.contact-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #f8fafc;
+}
+
+.contact-container {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact-text {
+  font-size: 1.25rem;
+  color: #a1a1aa; 
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-link {
+  color: #f4f4f5; 
+  transition-property: color;
+  transition-duration: 200ms;
+}
+
+.social-link:hover {
+  color: #60a5fa; 
+}
+
+.social-icon {
+  width: 2rem; 
+  height: 2rem;
+}
+
+/* Skills and Awards Container (like Experience/Outreach) */
+.skills-container,
+.awards-container {
+  background-color: white; /* same as other sections */
+  padding: 1rem 3rem 3rem 6rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Skills Grid (list style like Experience) */
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-card {
+  padding-left: 1rem; /* indent like list */
+}
+
+.skill-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.skill-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Awards Items (like publications or experience items) */
+.award-item {
+  margin-bottom: 1rem;
+  padding-left: 1rem; /* indentation for neat alignment */
+}
+
+.award-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.award-subtitle {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 0.25rem;
+}
+
+.award-description {
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.5;
 }

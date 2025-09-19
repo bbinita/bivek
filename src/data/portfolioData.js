@@ -1,4 +1,5 @@
 export const outreach = [
+  
   {
     title:
       "Leaf-level hyperspectral and UAV-based multispectral detection of potato leafhopper infestation and nitrogen stress in beans varieties under field and controlled environment conditions.",
@@ -61,3 +62,8 @@ export const outreach = [
     ],
   },
 ];
+// export const social = {
+//   email: "your-email@example.com",
+//   github: "https://github.com/yourusername",
+//   linkedin: "https://linkedin.com/in/yourusername",
+// };

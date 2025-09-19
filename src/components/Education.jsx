@@ -8,7 +8,6 @@ const Education = () => {
       date: "2019 - 2025",
       details:
         "Concentration: Remote sensing of biotic and abiotic stress in vegetation",
-      color: "blue",
     },
     {
       title: "B.Sc. Agriculture",
@@ -19,7 +18,6 @@ const Education = () => {
         "Comprehensive agricultural education with focus on crop science and sustainable farming practices",
         "Thesis: Comparison of Interpolation techniques for mapping soil fertility parameters",
       ],
-      color: "green",
     },
   ];
 
