@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+
 import Navbar from "./components/Navbar";
 import About from "./components/About.jsx";
 import Education from "./components/Education.jsx";
@@ -15,18 +17,53 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
+  // Parent container animation
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5, // delay between children
+      },
+    },
+  };
+
+  // Child animation
+  const item = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 1 } },
+  };
+
   return (
     <div className="home-container">
       {/* Hero Section with Profile Picture */}
       <div className="hero-section">
-        <img src="/bivek/bivek.jpg" alt="Profile" className="profile-picture" />
-        <div className="hero-text">
-          <h1 className="main-title">Bivek Bhusal</h1>
-          <p className="subtitle">
-            Ph.D. in Plant Science (Applied Remote Sensing and GIS)
-          </p>
+        <motion.img
+          src="/bivek/bivek.jpg"
+          alt="Profile"
+          className="profile-picture"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+        />
+
+        <motion.div
+          className="hero-text"
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
+          <motion.h1 className="main-title" variants={item}>
+            Bivek Bhusal
+          </motion.h1>
+
+          <motion.p className="subtitle" variants={item}>
+            Ph.D. in Plant Science (Applied Remote Sensing and GIS) <br />
+            University of Connecticut, USA
+          </motion.p>
+
           {/* Contact Icons */}
-          <div className="contact-icons">
+          <motion.div className="contact-icons" variants={item}>
             <a
               href="https://www.linkedin.com/in/bivekbhusal/"
               target="_blank"
@@ -35,7 +72,7 @@ const Home = () => {
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=bivek.bhusal.iaas@gmail.com"
+              href="mailto:bivek.bhusal.iaas@gmail.com"
               target="_blank"
               rel="noreferrer"
             >
@@ -48,11 +85,10 @@ const Home = () => {
             >
               <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
 
-      {/* About Section */}
       <About />
 
       {/* Education Section */}

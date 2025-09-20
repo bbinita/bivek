@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -25,73 +26,43 @@ const Home = () => {
     },
   ];
 
+  // Parent container animation
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5, // delay between children
+      },
+    },
+  };
+
+  // Child item animation
+  const item = {
+    hidden: { opacity: 0, y: 40 },
+    show: { opacity: 1, y: 0, transition: { duration: 1 } },
+  };
+
   return (
     <div className="home-container">
       {/* Hero Section */}
       <div className="hero-section">
         <img src="/bivek/bivek.jpg" alt="Profile" className="profile-picture" />
-        <div className="hero-text">
-          <h1 className="main-title">Bivek Bhusal</h1>
-          <p className="subtitle">
-            Ph.D. in Plant Science (Applied Remote Sensing and GIS)
-          </p>
-        </div>
-      </div>
 
-      {/* <div className="contact-section">
-        <h3>Contact Me</h3>
-        <div className="contact-icons">
-          <a
-            href="https://www.linkedin.com/in/yourprofile"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faLinkedin} size="2x" />
-          </a>
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=bivek.bhusal.iaas@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faEnvelope} size="2x" />
-          </a>
-          <a
-            href="https://github.com/yourusername"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faGithub} size="2x" />
-          </a> */}
-      {/* </div> */}
-      {/* </div> */}
-
-      {/* About Section */}
-      <div className="about-section">
-        <h2 className="section-title">About Me</h2>
-        <p className="description">
-          I am passionate about remote sensing, GIS, and plant science research.
-          My work focuses on detecting biotic and abiotic stress in vegetation
-          using advanced technologies.
-        </p>
-      </div>
-
-      {/* Education Section */}
-      <div className="education-section">
-        <h2 className="section-title">Education</h2>
-        <div className="education-container">
-          {educationData.map((edu, i) => (
-            <div key={i} className="education-item">
-              <h3>{edu.title}</h3>
-              <p style={{ color: edu.color }}>{edu.institution}</p>
-              <p>{edu.date}</p>
-              {Array.isArray(edu.details) ? (
-                edu.details.map((d, idx) => <p key={idx}>{d}</p>)
-              ) : (
-                <p>{edu.details}</p>
-              )}
-            </div>
-          ))}
-        </div>
+        <motion.div
+          className="hero-text"
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
+          <motion.h1 className="main-title" variants={item}>
+            Bivek Bhusal
+          </motion.h1>
+          <motion.p className="subtitle" variants={item}>
+            University of Connecticut, USA
+            <br /> Ph.D. in Plant Science (Applied Remote Sensing and GIS)
+          </motion.p>
+        </motion.div>
       </div>
     </div>
   );
