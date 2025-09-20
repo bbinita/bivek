@@ -16,7 +16,7 @@ const Outreach = ({ outreach }) => (
                   : "paper"
               }`}
             >
-              {pub.type}
+              {pub.type || "Presentation"}
             </span>
             {pub.date && <span className="publication-date">{pub.date}</span>}
           </div>
@@ -57,6 +57,20 @@ const Outreach = ({ outreach }) => (
                 <p className="publication-location">{pub.location}</p>
               )}
             </>
+          )}
+
+          {/* ✅ Render images if available */}
+          {pub.images && pub.images.length > 0 && (
+            <div className="publication-images">
+              {pub.images.map((img, idx) => (
+                <img
+                  key={idx}
+                  src={img}
+                  alt={`${pub.title} image ${idx + 1}`}
+                  className="publication-img"
+                />
+              ))}
+            </div>
           )}
         </div>
       ))}

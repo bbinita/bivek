@@ -394,6 +394,7 @@ body {
 /* Footer */
 .footer {
   position: fixed;
+  
   bottom: 0;
   left: 0;
   width: 100%;
@@ -402,6 +403,7 @@ body {
   text-align: center;
   padding: 10px;
   font-size: 14px;
+  /* margin-top: 5px; */
 }
 
 /* Responsive */
@@ -433,3 +435,74 @@ body {
     text-align: center;
   }
 }
+
+
+
+.experience-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.experience-images img {
+  /* width: 364px;
+  height: 213px; */
+  border-radius: 5px;
+  /* object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); */
+  max-width: 100%;
+  /* border-radius: 10px; */
+  margin: 5px;
+   border: 3px solid #4cafef;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific for Research Assistant */
+.assistant-images img {
+  width: 350px;
+  height: 220px;
+ 
+}
+
+/* Specific for Research Intern */
+.intern-images img {
+  width: 240px;
+  height: auto;
+
+  padding: 4px;
+  /* background: #fffbe6; */
+}
+
+.consultant-images img {
+
+  width: 350px;
+  height: 240px;
+}
+
+.technical-images img {
+  
+  width: 350px;
+  height: 220px;
+}
+
+/* Container for images inside outreach events */
+.publication-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* Individual images */
+.publication-images img {
+  width: 50rem;         
+  height: auto;
+
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+ 
+}
+
+

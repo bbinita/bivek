@@ -58,18 +58,12 @@ export const outreach = [
         
           "Connecticut Pomological Society Twilight Meeting and Field Day, Holmberg Orchards, Gales Ferry, CT",]
       },
-      // {
-      //   venue:
-      //     
-      //   date: "June 4, 2024",
-      //   details:
-      //     "Demonstrated drone flight and gave a talk on the importance of remote sensing of plant response for detecting plant health status in fruit trees.",
-      // },
+       
+      // images: [
+      //   "/bivek/ex1.JPG"
+      // ],
+    
     ],
+    images: ["/bivek/ex1.JPG"],
   },
 ];
-// export const social = {
-//   email: "your-email@example.com",
-//   github: "https://github.com/yourusername",
-//   linkedin: "https://linkedin.com/in/yourusername",
-// };
