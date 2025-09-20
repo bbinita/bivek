@@ -12,10 +12,10 @@ const Education = () => {
     {
       title: "B.Sc. Agriculture",
       institution:
-        "Lamjung Campus, Institute of Agriculture and Animal Science",
-      date: "Tribhuvan University, Nepal • December 2017",
+        "Tribhuvan University, Institute of Agriculture and Animal Science , Nepal",
+      date: "  December 2017",
       details: [
-        "Comprehensive agricultural education with focus on crop science and sustainable farming practices",
+        // "Comprehensive agricultural education with focus on crop science and sustainable farming practices",
         "Thesis: Comparison of Interpolation techniques for mapping soil fertility parameters",
       ],
     },

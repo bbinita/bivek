@@ -38,14 +38,25 @@ const Home = () => {
     <div className="home-container">
       {/* Hero Section with Profile Picture */}
       <div className="hero-section">
+        {/* First Image */}
         <motion.img
           src="/bivek/bivek.jpg"
           alt="Profile"
-          className="profile-picture"
+          className="profile-picture first-picture"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         />
+
+        {/* Second Image */}
+        {/* <motion.img
+          src="/bivek/IMG_0681.jpeg"
+          alt="Profile 2"
+          className="profile-picture second-picture"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2 }}
+        /> */}
 
         <motion.div
           className="hero-text"

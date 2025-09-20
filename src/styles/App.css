@@ -82,14 +82,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 15rem;
+  gap: 2rem;
   max-width: 1200px;
   padding: 2rem 1rem;
   margin: 0 auto 3rem;
 }
 
 .profile-picture {
-  width: 400px;
+  width: 450px;
   height: auto;
   object-fit: cover;
 }
@@ -467,7 +467,7 @@ body {
 /* Specific for Research Assistant */
 .assistant-images img {
   width: 350px;
-  height: 220px;
+  height: 245px;
  
 }
 
@@ -502,7 +502,7 @@ body {
 
 /* Individual images */
 .publication-images img {
-  width: 50rem;         
+  width: 32rem;         
   height: auto;
 
   border-radius: 8px;
@@ -532,3 +532,30 @@ body {
 .contact-icons a:hover {
   color: #0077b5;
 }
+
+
+/* .hero-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* keeps images responsive */
+
+
+/* .profile-picture {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
+
+
+  /* .second-picture{
+    height: 500px;
+    width: 400px;
+  }
+
+  .first-picture
+  {
+    height: 500px;
+  } */

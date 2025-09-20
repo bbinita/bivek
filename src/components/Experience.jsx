@@ -19,6 +19,12 @@ const Experience = () => {
         "/bivek/research1.JPG",
         "/bivek/research2.JPG",
         "/bivek/research3.JPG",
+        "/bivek/research4.jpg",
+        "/bivek/research5.JPG",
+        "/bivek/research6.jpg",
+        "/bivek/research7.jpg",
+        "/bivek/research8.jpg",
+        "/bivek/research9.jpg",
       ],
     },
     {
