@@ -81,7 +81,7 @@ body {
 .hero-section {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 15rem;
   max-width: 1200px;
   padding: 2rem 1rem;
@@ -91,13 +91,16 @@ body {
 .profile-picture {
   width: 400px;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center;
+   */
+   text-align: right;
+   max-width: 60%;
 }
 
 .hero-text .main-title {
@@ -110,13 +113,13 @@ body {
   font-size: 1.25rem;
   color: #64748b;
   margin-bottom: 1.5rem;
+  text-align: right;
 }
 
 /* About Section */
 .about-section {
-  max-width: 700px;
-  margin: 0 auto 3rem auto;
-  text-align: left;
+  max-width: 700px;      /* overall section width */
+  margin: 0 auto;
   padding: 1rem;
 }
 
@@ -130,8 +133,10 @@ body {
   font-size: 1.125rem;
   line-height: 1.7;
   color: #444;
-  text-align: justify;
+  text-align: justify;  
+  text-align-last: left;
 }
+
 
 /* Education Section */
 .education-section {
@@ -506,3 +511,24 @@ body {
 }
 
 
+
+.contact-section {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: right;
+  gap: 2rem;
+}
+
+.contact-icons a {
+  color: #333;
+  transition: color 0.3s;
+  font-size: 22px;
+}
+
+.contact-icons a:hover {
+  color: #0077b5;
+}

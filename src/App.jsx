@@ -10,6 +10,10 @@ import SkillsAndAwards from "./components/SkillsAndAwards";
 import { outreach } from "./data/portfolioData";
 import "./styles/App.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 const Home = () => {
   return (
     <div className="home-container">
@@ -21,6 +25,30 @@ const Home = () => {
           <p className="subtitle">
             Ph.D. in Plant Science (Applied Remote Sensing and GIS)
           </p>
+          {/* Contact Icons */}
+          <div className="contact-icons">
+            <a
+              href="https://www.linkedin.com/in/bivekbhusal/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=bivek.bhusal.iaas@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faEnvelope} size="2x" />
+            </a>
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x" />
+            </a>
+          </div>
         </div>
       </div>
 

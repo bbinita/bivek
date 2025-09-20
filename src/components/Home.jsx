@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   const educationData = [
@@ -34,6 +37,33 @@ const Home = () => {
           </p>
         </div>
       </div>
+
+      {/* <div className="contact-section">
+        <h3>Contact Me</h3>
+        <div className="contact-icons">
+          <a
+            href="https://www.linkedin.com/in/yourprofile"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          </a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=bivek.bhusal.iaas@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faEnvelope} size="2x" />
+          </a>
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} size="2x" />
+          </a> */}
+      {/* </div> */}
+      {/* </div> */}
 
       {/* About Section */}
       <div className="about-section">
